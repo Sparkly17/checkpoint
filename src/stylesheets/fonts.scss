@@ -1,6 +1,28 @@
-// @font-face {
-//   font-family: 'Inter';
-//   src: url('fonts/inter-regular.ttf');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+@font-face {
+    font-family: 'Onder';
+    src: url("fonts/Onder/Onder-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 400;
+    src: url("fonts/Onest/Onest-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 500;
+    src: url("fonts/Onest/Onest-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 600;
+    src: url("fonts/Onest/Onest-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-weight: 700;
+    src: url("fonts/Onest/Onest-Bold.ttf") format('truetype');
+}

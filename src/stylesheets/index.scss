@@ -1,14 +1,274 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav{
+    display: flex;
+    gap: 45px;
+}
+
+.nav_link{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 8px;
+}
+
+.header_input{
+    width: 256px;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.header_input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: #7A7A7A;
+}
+
+.header_search{
+    position: relative;
+}
+
+.header_search_icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--orange);
+    border-radius: 16px;
+    padding: 32px;
+    height: 600px;
+    justify-content: space-between;
+}
+
+.banner *{
+    position: relative;
+    z-index: 2;
+}
+
+.banner_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.what_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 400px;
+}
+
+.what_row-img{
+    width: 100%;
     height: 100%;
-  }
-  
-  body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-  }
+}
+
+.what_row-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.what{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.themes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.themes_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.theme{
+    width: 100%;
+    height: 145px;
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.theme.title{
+    padding: 0;
+    color: var(--black);
+    border-radius: 0;
+}
+
+.specials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    height: 320px;
+}
+
+.specials_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.special{
+    position: relative;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.special img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.special_text{
+    width: 238px;
+    left: 16px;
+    bottom: 16px;
+    backdrop-filter: blur(13.5px);
+    padding: 4px 4px;
+    border-radius: 8px;
+}
+
+.special_text p{
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--white);
+}
+
+.subscribe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form_fields{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form_field{
+    position: relative;
+}
+
+.form_input{
+    width: 265px;
+    height: 52px;
+    border: 2px solid var(--orange);
+    padding: 16px 12px;
+    border-radius: 16px;
+}
+
+.form_input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.form_input_icon{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.form_button{
+    width: 100%;
+    background-color: var(--orange);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    height: 52px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+.footer{
+    position: relative;
+    margin: 100px 40px 40px 40px;
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    gap: 115px;
+}
+.footer-list{
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list-el{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.footer-others{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.other-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FE6C23;
+    margin-bottom: 20px;
+}
+
+.other-text{
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-vector{
+    position: absolute;
+    z-index: 0;
+    top: -60px;
+    left: -40px;
+}
